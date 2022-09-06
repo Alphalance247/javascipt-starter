@@ -11,7 +11,16 @@
         alert(prompt("what is your real name").slice(0, 9));
         var myName = "Abdulhaekeem";
         myName.slice(0,5);
+        var surname = prompt("what is you surname");
+        var slicefirst = surname.slice(0,1);
+        var cap1 = slicefirst.toUpperCase();
+        var slicelast = surname.slice(1,surname.length);
+        var low2 = slicelast.toLowerCase();
+        var cancat = cap1+low2;
+        alert("hello "+cancat);
         
+
+
     </script>
 </body>
 </html>
