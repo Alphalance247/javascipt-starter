@@ -89,6 +89,7 @@ function Getbiscuit(biscuit) {
   var numberOfbiscuit = Math.trunc(biscuit/7);
     
   console.log("buy " + numberOfbiscuit + " of biscuit and give me me the remainig return");
+
   console.log("moveLeft");
   console.log("moveLeft");
   console.log("moveDown");
@@ -103,10 +104,59 @@ function Getbiscuit(biscuit) {
   
 }
 // dont forget that the output of return is stored here and you have to change it to your preferd variable
-
-
 var mychangeAsap = Getbiscuit(50);
 console.log(mychangeAsap);
+
+
+
+
+
+
+
+
+
+
+
+// creating function outside the logs
+function buyingEba(cash) {
+    console.log("moveanywhre and reach there");
+    console.log("take " + calcOfEba(85/10) + " and make vsure you collect the change");
+    console.log("ok sir already on my way there");
+    console.log("make sure you dont come late back");
+    return changeofEba(85%10);
+}
+
+// var masterChange = 
+ changeofEba = buyingEba(85)
+console.log("Alaye here is your whole " + changeofEba+ " change");
+
+function calcOfEba(moneyofeba, priceofeba) {
+    var retunEba = Math.trunc (moneyofeba,priceofeba);
+    return retunEba;
+}
+
+function changeofEba(moneyofeba, priceofeba) {
+    var change = Math.trunc (moneyofeba,priceofeba);
+    return change;
+}
+
+
+// BMICALCULATION
+
+
+
+function BMICalculation(weight,height) {
+    var BMICalculator = Math.round (weight/(height*height));
+    // return BMICalculator;
+    console.log("BMI should be around " +BMICalculator+ " in this case");
+}
+// function BMIcalc(weight,height) {
+//    var  bmi = Math.trunc(weight/height);
+//     return bmi
+// }
+
+BMICalculation(65,1.8);
+
     </script>
 </body>
 </html>
