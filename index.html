@@ -8,43 +8,42 @@
   </head>
   <body>
     <script>
-              alert(prompt("what is your real name").slice(0, 9));
-              var myName = "Abdulhaekeem";
-              myName.slice(0,5);
-              var surname = prompt("what is your surname");
-              var slicefirst = surname.slice(0,1);
-              var cap1 = slicefirst.toUpperCase();
-              var slicelast = surname.slice(1,surname.length);
-              var low2 = slicelast.toLowerCase();
-              var cancat = cap1+low2;
-              alert("hello "+cancat);
-              // console-function
-              function getMilk(){
-          console.log("leaveHouse");
-          console.log("moveRight");
-          console.log("moveRight");
-          console.log("moveUp");
-          console.log("moveUp");
-          console.log("moveUp");
-          console.log("moveUp");
-          console.log("moveRight");
-          console.log("moveRight");
-          console.log("buyMilk");
-          console.log("moveLeft");
-          console.log("moveLeft");
-          console.log("moveDown");
-          console.log("moveDown");
-          console.log("moveDown");
-          console.log("moveDown");
-          console.log("moveLeft");
-          console.log("moveLeft");
-          console.log("enterHouse");
-          }
-          getMilk();
+      alert(prompt("what is your real name").slice(0, 9));
+      var myName = "Abdulhaekeem";
+      myName.slice(0, 5);
+      var surname = prompt("what is your surname");
+      var slicefirst = surname.slice(0, 1);
+      var cap1 = slicefirst.toUpperCase();
+      var slicelast = surname.slice(1, surname.length);
+      var low2 = slicelast.toLowerCase();
+      var cancat = cap1 + low2;
+      alert("hello " + cancat);
+      // console-function
+      function getMilk() {
+        console.log("leaveHouse");
+        console.log("moveRight");
+        console.log("moveRight");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveUp");
+        console.log("moveRight");
+        console.log("moveRight");
+        console.log("buyMilk");
+        console.log("moveLeft");
+        console.log("moveLeft");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveDown");
+        console.log("moveLeft");
+        console.log("moveLeft");
+        console.log("enterHouse");
+      }
+      getMilk();
 
-
-          // secondfunctionusage
-          function getMilk(money) {
+      // secondfunctionusage
+      function getMilk(money) {
         console.log("leaveHouse");
         console.log("moveRight");
         console.log("moveRight");
@@ -55,7 +54,7 @@
         console.log("moveRight");
         console.log("moveRight");
 
-          var numberOfBottles = Math.floor(money/1.5);
+        var numberOfBottles = Math.floor(money / 1.5);
 
         console.log("take " + numberOfBottles + " to buy 10 bottles of milk");
         console.log("moveLeft");
@@ -68,7 +67,7 @@
         console.log("moveLeft");
         console.log("enterHouse");
       }
-      getMilk(10)
+      getMilk(10);
 
       function Getbiscuit(biscuit) {
         console.log("leaveHouse");
@@ -81,14 +80,15 @@
         console.log("moveRight");
         console.log("moveRight");
 
+        // functionof output and return
 
-          // functionof output and return
+        var numberOfbiscuit = Math.trunc(biscuit / 7);
 
-
-
-        var numberOfbiscuit = Math.trunc(biscuit/7);
-
-        console.log("buy " + numberOfbiscuit + " of biscuit and give me me the remainig return");
+        console.log(
+          "buy " +
+            numberOfbiscuit +
+            " of biscuit and give me me the remainig return"
+        );
 
         console.log("moveLeft");
         console.log("moveLeft");
@@ -100,154 +100,142 @@
         console.log("moveLeft");
         console.log("enterHouse");
 
-        return biscuit%7
-
+        return biscuit % 7;
       }
       // dont forget that the output of return is stored here and you have to change it to your preferd variable
       var mychangeAsap = Getbiscuit(50);
       console.log(mychangeAsap);
 
-
-
       // creating function outside the logs
       function buyingEba(cash) {
-          console.log("moveanywhre and reach there");
-          console.log("take " + calcOfEba(85/10) + " and make vsure you collect the change");
-          console.log("ok sir already on my way there");
-          console.log("make sure you dont come late back");
-          return changeofEba(85%10);
+        console.log("moveanywhre and reach there");
+        console.log(
+          "take " +
+            calcOfEba(85 / 10) +
+            " and make vsure you collect the change"
+        );
+        console.log("ok sir already on my way there");
+        console.log("make sure you dont come late back");
+        return changeofEba(85 % 10);
       }
 
       // var masterChange =
-       changeofEba = buyingEba(85)
-      console.log("Alaye here is your whole " + changeofEba+ " change");
+      changeofEba = buyingEba(85);
+      console.log("Alaye here is your whole " + changeofEba + " change");
 
       function calcOfEba(moneyofeba, priceofeba) {
-          var retunEba = Math.trunc (moneyofeba,priceofeba);
-          return retunEba;
+        var retunEba = Math.trunc(moneyofeba, priceofeba);
+        return retunEba;
       }
 
       function changeofEba(moneyofeba, priceofeba) {
-          var change = Math.trunc (moneyofeba,priceofeba);
-          return change;
+        var change = Math.trunc(moneyofeba, priceofeba);
+        return change;
       }
-
 
       // BMICALCULATION
 
-
-
-      function BMICalculation(weight,height) {
-          var BMICalculator = Math.round (weight/(height*height));
-          // return BMICalculator;
-          console.log("BMI should be around " +BMICalculator+ " in this case");
+      function BMICalculation(weight, height) {
+        var BMICalculator = Math.round(weight / (height * height));
+        // return BMICalculator;
+        console.log("BMI should be around " + BMICalculator + " in this case");
       }
       // function BMIcalc(weight,height) {
       //    var  bmi = Math.trunc(weight/height);
       //     return bmi
       // }
 
-      BMICalculation(65,1.8);
-
+      BMICalculation(65, 1.8);
 
       //  lemme predict hw much i love you
 
-            prompt ("what is your name")
-            prompt ("what is your bothers name")
-            var loveStory = Math.random()*100+1;
-            loveStory = Math.round(loveStory)
-            alert("The percentage of your love story is " +loveStory+ "%");
-
+      prompt("what is your name");
+      prompt("what is your bothers name");
+      var loveStory = Math.random() * 100 + 1;
+      loveStory = Math.round(loveStory);
+      alert("The percentage of your love story is " + loveStory + "%");
 
       // if or else statement
 
       // weather forecast
 
-      prompt ("what is your name");
-      prompt ("whatis the name of your country");
-      prompt ("would rain fall today in you country");
-      var weather = Math.random()*100+9;
+      prompt("what is your name");
+      prompt("whatis the name of your country");
+      prompt("would rain fall today in you country");
+      var weather = Math.random() * 100 + 9;
       weather = Math.round(weather);
-      if (weather > 80){
-          alert("your prediction for country is weather forecast is " +weather+ "% "+" you have the right assumption much love");
-      }
-      else{
-          alert("your prediction for country is weather forecast is " +weather+"%");
+      if (weather > 80) {
+        alert(
+          "your prediction for country is weather forecast is " +
+            weather +
+            "% " +
+            " you have the right assumption much love"
+        );
+      } else {
+        alert(
+          "your prediction for country is weather forecast is " + weather + "%"
+        );
       }
       // array usage 2
-      prompt ("what is your name");
-      prompt ("what is your lover's name");
-      var loverNmae = Math.random()*100+1;
+      prompt("what is your name");
+      prompt("what is your lover's name");
+      var loverNmae = Math.random() * 100 + 1;
       loverNmae = Math.round(loverNmae);
-      if (loverNmae > 70){
-      alert("wow she really love's you")
-      } else if (loverNmae > 30 && loverNmae >= 50){
-      alert("wow she loves you slightly")
-      }
-      else{
-          alert("she might love you in the futuyre")
+      if (loverNmae > 70) {
+        alert("wow she really love's you");
+      } else if (loverNmae > 30 && loverNmae >= 50) {
+        alert("wow she loves you slightly");
+      } else {
+        alert("she might love you in the futuyre");
       }
       // Array-usage
 
-      var moneyPaid = prompt("How much stuffs are you buying today")
+      var moneyPaid = prompt("How much stuffs are you buying today");
       var moneyCollected = ["20", "50", "70", "90"];
-      if (moneyCollected.includes(moneyPaid)){
-      alert("you have succesfully completed you transaction");
-      }else{
-      alert("Sorry, you need to go and take what your money would buy");
+      if (moneyCollected.includes(moneyPaid)) {
+        alert("you have succesfully completed you transaction");
+      } else {
+        alert("Sorry, you need to go and take what your money would buy");
       }
-
 
       // intermediate Array tecniques
 
       var input = [];
       var count = 1;
 
-
       function fizzBuzz() {
-
-            if (count % 3 === 0  && count % 5 === 0){
-               input.push("fizzBuzz");
-           }
-           else if (count % 3 === 0) {
-                input.push("fizz");
-          }
-            else if (count % 5 === 0){
+        if (count % 3 === 0 && count % 5 === 0) {
+          input.push("fizzBuzz");
+        } else if (count % 3 === 0) {
+          input.push("fizz");
+        } else if (count % 5 === 0) {
           input.push("buzz");
-          }
-            else{
-               input.push(count);
-            }
-           console.log(input);
-           count++;
+        } else {
+          input.push(count);
+        }
+        console.log(input);
+        count++;
       }
-
 
       // solving array with loop
 
       var numbers = [];
       var count = 0;
       function fizbuzz() {
-
-
-
-          while (count <= 100){
-
-          if (count % 3 === 0 && count % 5 === 0){
-          numbers.push("fizzbuzz");
-          }else if (count % 5 === 0){
-          numbers.push("buzz");
-          }
-          else if (count % 3 === 0){
-          numbers.push("fizz")
-          }
-          else{
-          numbers.push(count)
+        while (count <= 100) {
+          if (count % 3 === 0 && count % 5 === 0) {
+            numbers.push("fizzbuzz");
+          } else if (count % 5 === 0) {
+            numbers.push("buzz");
+          } else if (count % 3 === 0) {
+            numbers.push("fizz");
+          } else {
+            numbers.push(count);
           }
           count++;
-       }
+        }
 
-          console.log(numbers);
+        console.log(numbers);
       }
 
       // loop advancement usage
@@ -256,44 +244,50 @@
       var botlesNO = 99;
       var bottlesWord = "bottles";
 
-
       function wineLyrics() {
-      	while(botlesNO >= 0){
-      	if(botlesNO === 1){
-      		bottlesWord = "bottle";
-      	}
-      	 if (botlesNO === 0){
-      	// var NewWords = "No More
-          console.log("No more bottles of wine is available")
-      	console.log("No more bottles of wine is available")
-      	console.log("No more bottles of wine is available")
-      	botlesNO--;
-      	console.log("No more bottles of wine is available")
-      	}else{
-      	console.log(botlesNO+" " +bottlesWord+ " of wine on the wall,")
-      	console.log(botlesNO+" " +bottlesWord+ " of wine.")
-      	console.log("Take one down and pass it around")
-      	botlesNO--;
-      	console.log(botlesNO+" " +bottlesWord+ " of wine on the wall.")
-      	 };
-      	};
+        while (botlesNO >= 0) {
+          if (botlesNO === 1) {
+            bottlesWord = "bottle";
+          }
+          if (botlesNO === 0) {
+            // var NewWords = "No More
+            console.log("No more bottles of wine is available");
+            console.log("No more bottles of wine is available");
+            console.log("No more bottles of wine is available");
+            botlesNO--;
+            console.log("No more bottles of wine is available");
+          } else {
+            console.log(botlesNO + " " + bottlesWord + " of wine on the wall,");
+            console.log(botlesNO + " " + bottlesWord + " of wine.");
+            console.log("Take one down and pass it around");
+            botlesNO--;
+            console.log(botlesNO + " " + bottlesWord + " of wine on the wall.");
+          }
+        }
       }
-
 
       // for loops check out
 
-      // function fizz() {
-      //     for ( let numberOfBottles = 99; numberOfBottles >= 0; numberOfBottles-- ) {
-      //     var bottleWord = "bottle";
-      //     if (numberOfBottles === 1) {
-      //         bottleWord = "bottles";
-      //     }
-          console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+      function fizz() {
+        for (
+          let numberOfBottles = 99;
+          numberOfBottles >= 0;
+          numberOfBottles--
+        ) {
+          var bottleWord = "bottle";
+          if (numberOfBottles === 1) {
+            bottleWord = "bottles";
+          }
+          console.log(
+            numberOfBottles + " " + bottleWord + " of beer on the wall"
+          );
           console.log(numberOfBottles + " " + bottleWord + " of beer,");
           console.log("Take one down, pass it around,");
-      	numberOfBottles--;
-          console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
-      }
+          numberOfBottles--;
+          console.log(
+            numberOfBottles + " " + bottleWord + " of beer on the wall."
+          );
+        }
       }
     </script>
   </body>
